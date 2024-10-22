@@ -1,0 +1,6 @@
+arducopter -w -S --model + --speedup 1 --defaults parameters/copter.parm -I0
+
+
+starting the mavproxy:
+mavproxy --master tcp:127.0.0.1:5760 --out 127.0.0.1:14550 --out 127.0.0.1:14560 
+						--daemon --no-console --non-interactive
